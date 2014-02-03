@@ -1,6 +1,13 @@
 #!/usr/bin/python
 #
 # This script uses the AWS Python SDK to list the versions of the objects in a specific S3 bucket.
+# Usage: Supply one command line argument.
+#   1. Bucket Name - the name of the S3 bucket that you want to list the object versions from
+#
+# Output: 
+#   A list of keys in the following format
+#   Key Name : Version ID : Last modified date/time
+#
 
 import boto
 import sys
