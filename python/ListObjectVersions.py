@@ -23,7 +23,7 @@ def main(argv):
     # create an S3 connection object
     conn = boto.connect_s3(access_key,secret_key)
     
-    # create a bucket object for the bucket specified in the supplied command line arguement
+    # create a bucket object for the bucket specified in the supplied command line argument
     bucket = conn.get_bucket(bucketname)
 
     # create a list of the versons

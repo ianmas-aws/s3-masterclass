@@ -20,14 +20,12 @@ import sys
 
 def main(argv):
     
-    # check that we have the correct number of arguements (3), exit with usage guidance if not
-    argc = len(sys.argv)
-
     # assign Access Key and Secret Key to variables for later use
-    
     access_key = 'ACCESS KEY'
     secret_key = 'SECRET KEY'
-
+    
+    # check that we have the correct number of arguements (3), exit with usage guidance if not
+    argc = len(sys.argv)
     if argc != 4: 
         print "Usage: CreateExpiringLink.py <Bucket Name> <Key Name> <Expiry In Seconds>"
         sys.exit();
